@@ -13,14 +13,21 @@ public class MultipliersListTest {
 	public void shouldCreateListOfMultipliersOf3() {
 		List<Integer> listMultipliers = MultipliersList.getListMultipliers(3);
 		for (Integer integer : listMultipliers) {
-			Assert.assertTrue((integer % 3) == 0);
+			Assert.assertEquals((integer % 3), 0);
 		}
 	}
 	@Test
 	public void shouldCreateListOfMultipliersOf5() {
 		List<Integer> listMultipliers = MultipliersList.getListMultipliers(5);
 		for (Integer integer : listMultipliers) {
-			Assert.assertTrue((integer % 5) == 0);
+			Assert.assertEquals(integer % 5, 0);
+		}
+	}
+	@Test
+	public void shouldCreateListOfMultipliersOf100() {
+		List<Integer> listMultipliers = MultipliersList.getListMultipliers(100);
+		for (Integer integer : listMultipliers) {
+			Assert.assertEquals(integer % 100, 0);
 		}
 	}
 	@Test
