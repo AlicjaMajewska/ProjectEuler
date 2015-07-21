@@ -8,7 +8,7 @@ public class MultipliersList {
 		for (int i = 0; i < 1000; i += multiplier) {
 			multiplies.add(new Integer(i));
 		}
-		return multiples;
+		return multiplies;
 	}
 
 	public static int getSumOfList(List<Integer> integerList) {
