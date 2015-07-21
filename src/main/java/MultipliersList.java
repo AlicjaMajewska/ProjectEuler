@@ -5,8 +5,9 @@ public class MultipliersList {
 
 	public static List<Integer> getListMultipliers(int multiplier) {
 		List<Integer> multiples = new ArrayList<Integer>();
-		for (int i = 0; i < 1000; i += multiplier) {
+		for (int i = 0; i < 5000; ) {
 			multiples.add(new Integer(i));
+			i += multiplier;
 		}
 		return multiples;
 	}
