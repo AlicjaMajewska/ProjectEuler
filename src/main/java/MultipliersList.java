@@ -4,9 +4,9 @@ import java.util.List;
 public class MultipliersList {
 
 	public static List<Integer> getListMultipliers(int multiplier) {
-		List<Integer> multiplies = new ArrayList<Integer>();
+		List<Integer> multiples = new ArrayList<Integer>();
 		for (int i = 0; i < 1000; i += multiplier) {
-			multiplies.add(new Integer(i));
+			multiples.add(new Integer(i));
 		}
 		return multiples;
 	}
