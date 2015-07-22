@@ -30,6 +30,13 @@ public class MultipliersListTest {
 			Assert.assertEquals(integer % 1000, 0);
 		}
 	}
+	@Test
+	public void shouldCreateListOfMultipliersOf200() {
+		List<Integer> listMultipliers = MultipliersList.getListMultipliers(200);
+		for (Integer integer : listMultipliers) {
+			Assert.assertEquals(integer % 200, 0);
+		}
+	}
 
 	@Test
 	public void shouldGet150AsSumOfTheList() {
